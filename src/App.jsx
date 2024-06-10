@@ -30,6 +30,7 @@ const App = () => {
         setIsAuthenticated(true);
         setUser(response.data.user);
       } catch (error) {
+        console.log("error",error);
         setIsAuthenticated(false);
         setUser({});
       }
